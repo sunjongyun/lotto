@@ -1,0 +1,47 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 생성기</title>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+<div style="text-align: center; margin-top: 50px;">
+    <h1>로또 번호 생성기</h1>
+    <button id="generateButton">번호 생성</button>
+    <div id="lottoNumbers"></div>
+
+    <div style="border:2px solid black; width: 100%; margin-top: 20px;"></div>
+    <h2>예측번호 입력</h2>
+    <input type="text" id="winningNumberInput" placeholder="1~45 사이 번호입력">
+    <button id="insertNumber">번호 입력</button>
+    <button id="resetNumber">번호목록 모두삭제</button>
+
+    <div id="numberList" style="border: 2px solid orange; width: 100%; margin: 5px auto; text-align: left">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+    </div>
+
+    <div style="border:2px solid black; width: 100%; margin: 20px 0px;"></div>
+
+    <button id="extractNumberBtn">로또번호 산출하기</button>
+    <button id="resetExtractedNumber">산출목록 모두삭제</button>
+    <div id="extractNumberList" style="border: 2px solid purple; width: 100%; margin: 5px auto; text-align: left">
+        <ul>
+            <li>1, 2, 3, 5, 6, 7</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
