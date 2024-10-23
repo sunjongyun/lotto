@@ -27,7 +27,7 @@ document.querySelector('#insertNumber').addEventListener('click', () => {
 
     for (let i = 0; i < length; i++) {
         if (numberList[i].textContent === document.querySelector('#winningNumberInput').value) {
-            alert('중복된 번호입니다.');
+            // alert('중복된 번호입니다.');
             return;
         }
     }
